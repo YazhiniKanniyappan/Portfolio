@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yazhini's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        a:hover i {
+            color: rgb(0, 229, 255);
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .project-card {
+            min-height: 200px;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 20px 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background-color: #121212;
+            padding-top: 60px;
+        }
+
+        #about,
+        #skills,
+        #projects,
+        #contact,
+        footer{
+            background-color: #121212;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .blue-text {
+            color: rgb(0, 229, 255);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+    <!-- Navbar -->
+    <nav class="navbar text-dark navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yazhini Kanniyappan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-center d-flex align-items-center justify-content-center py-5">
+        <div class="container text-light">
+            <h1 class="display-4 fw-bold">Hello, I'm <span class="blue-text">Yazhini</span></h1>
+            <p class="lead fw-bold">Active learner in the web development community</p>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5 my-1 text-light">
+        <div class="container">
+            <h2 class="text-center mb-4 blue-text">About Me</h2>
+            <div class="row align-items-center">
+
+                <!-- Optional Image -->
+                <div class="col-md-5 text-center mb-4 mb-md-0">
+                    <img src="Yazhini.jpg" alt="Yazhini" class="img-fluid rounded shadow" style="max-height: 300px;">
+                </div>
+
+                <!-- Description Text -->
+                <div class="col-md-7">
+                    <p>
+                        Hello! I'm <strong>Yazhini</strong>, a passionate Frontend Developer who loves crafting
+                        beautiful and responsive websites. I specialize in building modern web interfaces using
+                        <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and
+                        <strong>React</strong>.
+                    </p>
+                    <p>
+                        I've developed several interactive projects including <strong>QuizQuest</strong>, a weather app,
+                        and an Instagram clone. I also have experience working with Bootstrap, APIs, Git, and Figma to
+                        bring creative ideas to life.
+                    </p>
+                    <p>
+                        I'm currently exploring advanced JavaScript and enhancing my skills in UI/UX design. My goal is
+                        to build seamless, accessible, and user-friendly digital experiences.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container mx-auto text-center">
+        <h2 class="text-center mb-4 blue-text">Skills</h2>
+
+        <!-- Custom Styles -->
+        <style>
+            #skills .container {
+                max-width: 900px; /* Resize container */
+            }
+
+            #skills .card {
+                padding: 1rem 0.5rem; /* Make cards more compact */
+            }
+
+            .skill-icon {
+                height: 45px; /* Smaller icon size */
+            }
+        </style>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- HTML -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt="HTML" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">HTML</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        alt="CSS" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">CSS</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">JavaScript</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- React -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="React" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">React</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                        alt="Bootstrap" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">Bootstrap</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Figma -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                        alt="Figma" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">Figma</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">GitHub</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Java -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                        alt="Java" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">Java</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                        alt="C" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">C</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unity -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+                        alt="Unity" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">Unity</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unreal Engine -->
+            <div class="col-6 col-md-3">
+                <div class="card text-center shadow-sm">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg"
+                        alt="Unreal Engine" class="img-fluid mx-auto skill-icon">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">Unreal Engine</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 text-dark ">
+        <div class="container">
+            <h2 class="text-center mb-4 blue-text">Projects</h2>
+            <div class="row g-4">
+
+                <!-- QuizQuest -->
+                <div class="col-md-4">
+                    <div class="card project-card shadow h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">QuizQuest</h5>
+                            <p class="card-text text-dark">Interactive quiz app with timer, feedback, and category-based
+                                questions.</p>
+                            <a href="https://quiz-quest-nu.vercel.app/" target="_blank"
+                                class="btn btn-primary mt-auto">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather App -->
+                <div class="col-md-4">
+                    <div class="card project-card shadow h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Weather App</h5>
+                            <p class="card-text text-dark">Real-time weather display using API integration with city search
+                                functionality.</p>
+                            <a href="https://weatherapp-roan-sigma.vercel.app/" target="_blank"
+                                class="btn btn-primary  mt-auto">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Clone -->
+                <div class="col-md-4">
+                    <div class="card project-card shadow h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title  fw-bold">Instagram Clone</h5>
+                            <p class="card-text text-dark">A React-based UI clone of Instagram with routing and reusable
+                                components.</p>
+                            <a href="https://github.com/YazhiniKanniyappan/instagram_clone" target="_blank"
+                                class="btn btn-primary mt-auto">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class=" ">
+        <div class="container text-center">
+            <h2 class="mb-4 blue-text">Contact</h2>
+            <div class="d-flex justify-content-center gap-4 fs-3">
+                <a href="mailto:yazhinigallery@gmail.com" target="_blank" class="text-light" title="Email">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a href="https://linkedin.com/in/yazhini-kanniyappan" target="_blank" class="text-light"
+                    title="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/YazhiniKanniyappan" target="_blank" class="text-light" title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.hackerrank.com/profile/yazhisai1107" target="_blank" class="text-light"
+                    title="HackerRank">
+                    <i class="bi bi-code-slash"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>© 2025 Yazhini. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
