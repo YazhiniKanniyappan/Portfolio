@@ -27,3 +27,72 @@ background: linear-gradient(to bottom, rgb(21, 160, 214), rgb(224, 222, 222));
 #contact{
   padding-top: 65px;
 }
+.custom-bullet::marker {
+    content: "🌟 ";
+}
+       a:hover i {
+            color: rgb(0, 229, 255);
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .project-card {
+            min-height: 200px;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 20px 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background-color: #121212;
+            padding-top: 60px;
+        }
+
+        #about,
+        #skills,
+        #projects,
+        #contact,
+        footer{
+            background-color: #121212;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .blue-text {
+            color: rgb(0, 229, 255);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
